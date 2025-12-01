@@ -21,5 +21,6 @@ public class Aula04Operadores {
         result = number1*number2;
 
         System.out.println("O resultado da multiplicação é: "+ result);
+        //Estou alterando para ver se entendi como commitar
     }
 }
