@@ -38,6 +38,8 @@ public class Aula05EstruturasCondicionais06 {
                 break;
         }
 
+        System.out.println(result);
+
         /* Código do William:
          switch (day){
             case 1:
@@ -56,7 +58,5 @@ public class Aula05EstruturasCondicionais06 {
                 break;
         }
         */
-
-        System.out.println(result);
     }
 }
