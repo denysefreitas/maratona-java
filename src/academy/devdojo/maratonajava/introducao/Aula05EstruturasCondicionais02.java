@@ -11,10 +11,11 @@ public class Aula05EstruturasCondicionais02 {
 
         if(age < 15){
             category = "infantil";
-        } else if (age < 18) {
+        } else if (age >= 15 && age < 18) {
             /* É desnecessário dizer age <= 15 && age < 18.
              Se há compilação do else if quer dizer que a condição anterior não é atendida.
-             Portanto, o usuário tem, necessariamente, mais do que 15 anos.*/
+             Portanto, o usuário tem, necessariamente, mais do que 15 anos.
+             No entanto, por questões de boas práticas, usarei ambas.*/
             category = "juvenil";
         } else {
             category = "adulta";
