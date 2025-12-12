@@ -55,5 +55,24 @@ public class Calculadora {
         System.out.println("a = " + a);
         System.out.println("b = " + b);
         System.out.println("------------------------");
+    }public void somaVarArgs(int... numbers) {
+        // Caso haja mais do que um atributo, Varargs deve ser o último.
+        int sum = 0;
+
+        for (int aux : numbers) {
+            sum += aux;
+        }
+        System.out.println("A soma é: " + sum);
     }
+
+    public void somaArray(int[] numbers) {
+        int sum = 0;
+
+        for (int aux : numbers) {
+            sum += aux;
+        }
+        System.out.println("A soma é: " + sum);
+    }
+
+
 }
