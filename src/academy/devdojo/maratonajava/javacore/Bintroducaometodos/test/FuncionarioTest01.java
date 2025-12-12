@@ -10,7 +10,7 @@ public class FuncionarioTest01 {
         CalcularMediaFuncionario mediaFuncionario = new CalcularMediaFuncionario();
         ImpressoraDadosDoFuncionario impressoraFuncionario = new ImpressoraDadosDoFuncionario();
 
-        funcionario.name = "Denyse";
+        funcionario.name = "Denyse Freitas Santos";
         funcionario.age = 20;
         funcionario.salarys = new double[]{1000.0, 2000.0, 3000.0};
 
