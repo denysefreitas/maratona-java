@@ -1,21 +1,21 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.test;
 
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.CalcularMediaFuncionario;
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Funcionario;
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraDadosDoFuncionario;
+import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.CalcularMediaFuncionario01;
+import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Funcionario01;
+import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraDadosDoFuncionario01;
 
 public class FuncionarioTest01 {
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario();
-        CalcularMediaFuncionario mediaFuncionario = new CalcularMediaFuncionario();
-        ImpressoraDadosDoFuncionario impressoraFuncionario = new ImpressoraDadosDoFuncionario();
+        Funcionario01 funcionario01 = new Funcionario01();
+        CalcularMediaFuncionario01 mediaFuncionario = new CalcularMediaFuncionario01();
+        ImpressoraDadosDoFuncionario01 impressoraFuncionario = new ImpressoraDadosDoFuncionario01();
 
-        funcionario.name = "Denyse";
-        funcionario.age = 20;
-        funcionario.salarys = new double[]{1000.0, 2000.0, 3000.0};
+        funcionario01.name = "Denyse";
+        funcionario01.age = 20;
+        funcionario01.salarys = new double[]{1000.0, 2000.0, 3000.0};
 
-        impressoraFuncionario.impressoraDadosDoFuncionario(funcionario);
+        impressoraFuncionario.impressoraDadosDoFuncionario(funcionario01);
         System.out.println("\n------------------------------------");
-        mediaFuncionario.mediaSalarial(funcionario);
+        mediaFuncionario.mediaSalarial(funcionario01);
     }
 }
