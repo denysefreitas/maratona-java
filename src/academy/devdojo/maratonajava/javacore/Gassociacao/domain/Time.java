@@ -1,17 +1,44 @@
 package academy.devdojo.maratonajava.javacore.Gassociacao.domain;
 
 public class Time {
-    private String nome;
+    private String name;
+    private Jogador[] jogadores;
 
-    public Time(String nome) {
-        this.nome = nome;
+    public Time(String name) {
+        this.name = name;
     }
 
-    public String getNome() {
-        return nome;
+    public Time(String name, Jogador[] jogadores) {
+        this.name = name;
+        this.jogadores = jogadores;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void imprime(){
+        System.out.println(this.name + "\n");
+
+        if(this.jogadores == null){
+            System.out.println("O time não apresenta jogadores");
+            return;
+        }
+
+        for (Jogador jogador : jogadores){
+            System.out.println(jogador.getName());
+        }
+    }
+
+    public Jogador[] getJogadores() {
+        return jogadores;
+    }
+
+    public void setJogadores(Jogador[] jogadores) {
+        this.jogadores = jogadores;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
