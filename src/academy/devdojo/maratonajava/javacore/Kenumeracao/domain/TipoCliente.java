@@ -18,6 +18,29 @@ public enum TipoCliente {
         this.nomeRelatorio = nomeRelatorio;
     }
 
+    public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
+        for (TipoCliente tipoCliente : values()) {
+            // values() retorna um array com todas as enums (PESSOA_FISICA, PESSOA_JURIDICA)
+            if (tipoCliente.nomeRelatorio.equals(nomeRelatorio)) {
+                // 1 - O tipoCliente recebe a enum de values() e a armazena momentaneamente (tome como e1, isto é, tipoCliente = e1)
+                // 2 - O if compara se o ATRIBUTO nomeRelatorio da e1 é igual ao nomeRelatorio que foi passado como argumento
+                // 3 - Se a condição for verdadeira, o método retorna e1 (PESSOA_FISICA)
+                return tipoCliente;
+            }
+        }
+        return null;
+        // Nesse caso, após percorrer os enums, não foi encontrada nenhuma correspondência
+    }
+
+    public static TipoCliente tipoClientePorValor(int valor){
+        for(TipoCliente tipoCliente : values()){
+            if(tipoCliente.valor == valor){
+                return tipoCliente;
+            }
+        }
+        return null;
+    }
+
     public String getNomeRelatorio() {
         return nomeRelatorio;
     }
