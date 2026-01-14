@@ -10,5 +10,8 @@ public class FuncionarioTest01 {
 
         System.out.println(gerente01);
         System.out.println(desenvolvedor01);
+        System.out.println("--------------------");
+        gerente01.imprime();
+        desenvolvedor01.imprime();
     }
 }

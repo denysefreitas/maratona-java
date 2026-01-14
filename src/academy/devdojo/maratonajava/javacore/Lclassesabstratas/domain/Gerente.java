@@ -12,4 +12,11 @@ public class Gerente extends Funcionario {
                 ", salary=" + salary +
                 '}';
     }
+
+    @Override
+    public void calculaBonus() {
+        salary = salary + salary * 0.2;
+    }
+
+
 }
