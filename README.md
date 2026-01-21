@@ -5,6 +5,7 @@ Repositório de estudos da **linguagem Java** construído ao longo do curso [Mar
 Acesse também o repositório original do  professor **Wiliam Suane**:
 🔗 [Repositório - Maratona Java (DevDojo)](https://github.com/devdojobr/maratona-java-virado-no-jiraya)
 
+<br>
 ## 🎯 Objetivo
 
 Este repositório tem como objetivo praticar os principais conceitos de Java, incluindo:
@@ -25,6 +26,7 @@ Este repositório tem como objetivo praticar os principais conceitos de Java, in
 
 Além de servir como **registro** da minha evolução na linguagem.
 
+<br>
 ## 📁 Organização do projeto
 
 Os códigos estão organizados por **pacotes** e **temas**, tal como é estruturado pelo professor, por exemplo:
@@ -44,12 +46,14 @@ Em alguns casos — como `Npolimorfismo` —, a estrutura se divide em mais paco
 
 > ⚠️ A organização pode evoluir conforme novos conteúdos forem adicionados ao curso.
 
+<br>
 ## 🛠️ Tecnologias
 
 - Java
 - JDK 21 (com *language level* configurado para Java 8, conforme orientação do curso)
 - IDE: IntelliJ IDEA Community
 
+<br>
 ## ▶️ Como executar
 
 1. Clone o repositório:
