@@ -3,19 +3,21 @@ package academy.devdojo.maratonajava.javacore.Oexception.exception.test;
 import java.io.File;
 import java.io.IOException;
 
-public class ExceptionTest01 {
-    public static void main(String[] args) {
+public class ExceptionTest02 {
+    public static void main(String[] args) throws IOException{
         criarNovoArquivo();
     }
 
-    private static void criarNovoArquivo(){
+    public static void criarNovoArquivo () throws IOException{
         File file = new File("arquivo\\teste.txt");
-        try {
+
+        try{
             boolean isCriado = file.createNewFile();
             System.out.println("Arquivo criado? " + isCriado);
         } catch (IOException e){
-            // Não deixe o bloco em branco
-            e.printStackTrace(); // Imprime toda a exceção -> não é boa prática
+            e.printStackTrace();
+            throw e; // Relança a exceção
+            //throw new RuntimeException("Falha na criação do arquivo.");
         }
     }
 }
